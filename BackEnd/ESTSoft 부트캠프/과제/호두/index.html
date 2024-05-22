@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hodu</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6e6d3d6267a2ea7f0656ab49c2604349"></script>
 </head>
 
 <body>
   <header>
     <section id="header-top" class="flex justify-content-space-between">
       <h2 class="d-none">Header top</h2>
-      <img src="assets/img/Logo-fin.svg" alt="호두 로고">
+      <div>
+        <img src="assets/img/Logo-fin.svg" alt="호두 로고">
+      </div>
       <nav id="header-top-nav">
         <ul class="list-row d-inline">
           <li><a href="">Home</a></li>
@@ -25,97 +28,130 @@
 
     <section id="header-bottom">
       <h2 class="d-none">Header bottom</h2>
-      <div>
-        <strong>
+      <div id="header-bottom-text">
+        <h3>
           Lorem Ipsum is simply
           dummy text of the printing and
-        </strong>
+        </h3>
+
         <p>
           Lorem Ipsum is simply dummy text of the printing and
           typesetting industry.<br>
           Lorem Ipsum has been the industry's standard dummy text
           ever since the 1500s, when an unknown
         </p>
+
         <button class="btn">Download</button>
       </div>
 
-      <img src="assets/img/hodu-box.png" alt="박스를 머리에 쓴 고양이" height="890">
+      <div>
+        <img src="assets/img/hodu-box.png" alt="박스를 머리에 쓴 고양이">
+      </div>
     </section>
   </header>
 
   <main>
-    <section id="main-top">
-      <h2 class="d-none">main top</h2>
-      <img src="assets/img/hodu-1.png" alt="이불에 누워있는 고양이">
-      <div class="flex flex-column justify-content-center">
-        <strong>
+    <section id="intro">
+      <h2 class="d-none">intro</h2>
+      <div>
+        <img src="assets/img/hodu-1.png" alt="이불에 누워있는 고양이">
+      </div>
+      <div>
+        <h3>
           Lorem Ipsum is simply
           dummy text of the printing and dummy text
-        </strong>
-        <p>
+        </h3>
+        <span>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
+        </span>
       </div>
     </section>
 
-    <section id="main-picture">
+    <section id="subtitle">
       <h2>dummy text of the printing and dummy</h2>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.
         <br>
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
       </p>
+    </section>
 
-      <article id="picture">
-        <img src="assets/img/img_1.png" alt="캣타워에 올라간 고양이">
-        <img src="assets/img/img_2.png" alt="뒤를 바라보는 고양이">
-        <img src="assets/img/img_3.png" alt="멀리서 찍은 정면을 보는 고양이">
-        <img src="assets/img/img_4.png" alt="가까이 찍은 정면을 보는 고양이">
-        <img src="assets/img/img_5.png" alt="위를 보는 고양이">
-        <img src="assets/img/img_6.png" alt="하품하는 고양이">
-      </article>
+    <section id="pictures">
+      <h2 class="d-none">고양이 사진들</h2>
+      <div class="picture-container">
+        <div class="picture-wrap">
+          <img src="assets/img/img_1.png" alt="캣타워에 올라간 고양이">
+        </div>
+        <div class="picture-wrap">
+          <img src="assets/img/img_2.png" alt="뒤를 바라보는 고양이">
+        </div>
+        <div class="picture-wrap">
+          <img src="assets/img/img_3.png" alt="멀리서 찍은 정면을 보는 고양이">
+        </div>
+        <div class="picture-wrap">
+          <img src="assets/img/img_4.png" alt="가까이 찍은 정면을 보는 고양이">
+        </div>
+        <div class="picture-wrap">
+          <img src="assets/img/img_5.png" alt="위를 보는 고양이">
+        </div>
+        <div class="picture-wrap">
+          <img src="assets/img/img_6.png" alt="하품하는 고양이">
+        </div>
+      </div>
 
-      <strong>Continue exploring HODU</strong>
-      <button>Show more</button>
+      <strong class="d-block font-24 font-w-700">Continue exploring HODU</strong>
+      <button class="btn show-more-btn">Show more</button>
     </section>
 
     <hr>
 
-    <section>
+    <section id="map-wrap">
       <h2 class="d-none">지도</h2>
-
-      <div style="height: 520px;"></div>
+      <strong class="d-block font-36 font-w-700">Where you'll be</strong>
+      <span>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</span>
+      <div id="map"></div>
     </section>
 
-    <section>
+    <section id="subscribet">
       <h2 class="d-none">구독</h2>
-      <div>
+      <section class="text">
+        <h3 class="d-none">구독 권유 메세지</h3>
         <strong>Subscribe to our Blog post</strong>
-        <p>
+        <br>
+        <span>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-        </p>
+          Lorem Ipsum has been the industry's standard dummy text
+        </span>
+      </section>
+      <section class="input-container">
+        <h3 class="d-none">이메일 입력</h3>
+        <img src="assets/img/mail.svg" alt="이메일 아이콘">
         <input type="email" placeholder="Enter your e-mail address">
-        <button>Subscribe</button>
+        <button class="btn hodu-modal-btn">Subscribe</button>
+      </section>
     </section>
 
-    <img src="" alt="">
-
-    <button>스크롤</button>
-
-    <footer>
-      <img src="assets/img/Logo-fin.svg" alt="호두 로고">
-
-      <nav>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </nav>
-    </footer>
   </main>
+
+  <div id="bottom-img-container">
+    <img src="assets/img/img_7.png" alt="">
+  </div>
+
+  <footer>
+    <img src="assets/img/Logo-fin.svg" alt="호두 로고">
+    <nav>
+      <ul class="d-inline">
+        <li><a class="logo-anchor" id="link-blog" href=""></a></li>
+        <li><a class="logo-anchor" id="link-instagram" href=""></a></li>
+        <li><a class="logo-anchor" id="link-facebook" href=""></a></li>
+        <li><a class="logo-anchor" id="link-youtube" href=""></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="assets/script/kakaomap.js"></script>
+  <script src="assets/script/hoduModal.js"></script>
+  <script src="assets/script/pictureShowMore.js"></script>
 </body>
 
 </html>
