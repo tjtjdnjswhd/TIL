@@ -42,7 +42,6 @@ header {
     justify-content: space-between;
     background-color: #F2E9D8;
     margin-bottom: 80px;
-    max-height: 900px;
     overflow: hidden;
 }
 
@@ -70,33 +69,9 @@ img {
     max-width: 100%;
 }
 
-main img {
+main section:not(#map-wrap) img {
     border-radius: 30px;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-grow-1 * {
-    flex-grow: 1;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-space-between {
-    justify-content: space-between;
-}
-
-.align-items-center {
-    align-items: center;
 }
 
 .font-24 {
@@ -140,6 +115,19 @@ main img {
     display: none;
 }
 
+#header-sidebar {
+    display: inline;
+}
+
+.sidebar-open-btn,
+.sidebar-close-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
 #header-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -149,6 +137,7 @@ main img {
 }
 
 #header-top-nav ul {
+    display: inline;
     list-style: none;
     padding: 0;
     margin-right: 49px;
@@ -167,25 +156,32 @@ main img {
 }
 
 #header-bottom {
-    max-height: 798px;
     display: flex;
-    justify-content: space-between;
     background-color: #F2E9D8;
+    overflow: hidden;
+    max-height: 800px;
+}
+
+#header-bottom-img {
+    max-width: 415px;
+    flex-shrink: 1.2;
 }
 
 #header-bottom-text {
-    max-width: 695px;
-    text-wrap: pretty;
     align-self: center;
+    flex-shrink: 1.5;
 }
 
 #header-bottom-text h3 {
+    display: inline;
+    margin-top: 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
 }
 
-#header-bottom-text p {
+#header-bottom-text span {
+    display: inline-block;
     max-width: 420px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -194,16 +190,12 @@ main img {
     line-height: 20px;
 }
 
-#header-bottom img {
-    max-width: 415px;
-}
-
 #intro {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 120px;
-    gap: 110px;
+    gap: 5%;
 }
 
 #intro h3 {
@@ -245,13 +237,8 @@ main img {
     margin-bottom: 100px;
 }
 
-.picture-container > * {
+.picture-container>* {
     flex: 1 1 326px;
-}
-
-.picture-wrap img {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 #map-wrap {
@@ -279,14 +266,16 @@ main img {
     color: white;
 }
 
-#subscribet > * {
+#subscribet>* {
     flex: 1 1 50%;
 }
 
 #subscribet strong {
+    display: inline-block;
     font-size: 36px;
     font-weight: 700;
     line-height: 45px;
+    margin-bottom: 18px;
 }
 
 #subscribet p {
@@ -295,27 +284,36 @@ main img {
     line-height: 18px;
 }
 
-#subscribet .text {
-    /* max-width: 550px; */
+.input-container {
+    position: relative;
 }
 
-.input-container {
-    /* width: 530px; */
+.input-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.input-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
     border-radius: 60px;
     height: 60px;
     padding: 0 5px 0 15px;
 }
 
-.input-container input {
-    width: 100%;
+.input-wrap::before {
+    content: url('../img/mail.svg');
+    margin-right: 16px;
+}
+
+.input-wrap input {
+    width: calc(100% - 180px);
     border: none;
 }
 
-.input-container input::placeholder {
+.input-wrap input::placeholder {
     color: #767676;
     font-size: 16px;
     font-weight: 400;
@@ -333,7 +331,6 @@ main img {
 #bottom-img-container img {
     position: absolute;
     z-index: -1;
-    top: -400px;
     left: 0;
 }
 
@@ -390,17 +387,20 @@ footer li a {
 }
 
 .modal {
-    width: 600px;
-    height: 400px;
+    --modal-width: min(600px, calc(100vw - 40px));
+    --modal-height: calc(var(--modal-width) * 0.6666666);
+
+    width: var(--modal-width);
+    height: var(--modal-height);
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -200px;
-    margin-left: -300px;
+    margin-top: calc(-1 * var(--modal-height) / 2);
+    margin-left: calc(-1 * var(--modal-width) / 2);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     background-image: url('../img/modal-background.png');
@@ -408,24 +408,25 @@ footer li a {
     background-size: contain;
     border-radius: 30px;
     z-index: 1000;
+
+    text-align: center;
 }
 
 .modal img {
     width: 20%;
-    margin-bottom: 24px;
 }
 
 .modal strong {
+    display: inline-block;
+    width: 100% ;
     color: rgba(217, 118, 82, 1);
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 12px;
 }
 
 .modal span {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 38px;
 }
 
 .modal-bg {
@@ -435,4 +436,106 @@ footer li a {
     position: fixed;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1080px) {
+    #subscribet {
+        align-items: normal;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #subscribet .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #subscribet .input-container input {
+        width: 100%;
+    }
+
+    #subscribet .input-container .btn {
+        position: static;
+        margin-top: 20px;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    #header-bottom,
+    #intro {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    #header-bottom,
+    #intro {
+        align-items: center;
+        text-align: center;
+    }
+
+    #header-bottom-img {
+        max-width: 200px;
+    }
+
+    #header-bottom-img img {
+        position: relative;
+        top: 60px;
+    }
+
+    #header-sidebar {
+        display: none;
+        width: max(calc(100vw - 260px), 240px);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: #263140;
+        position: fixed;
+        padding-left: 60px;
+        padding-top: 120px;
+        z-index: 1000;
+    }
+
+    #header-sidebar.open {
+        display: block;
+    }
+
+    #header-sidebar .sidebar-close-btn {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    #header-sidebar a {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    #header-sidebar ul {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    #header-sidebar li {
+        margin-left: 0;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .sidebar-open-btn,
+    .sidebar-close-btn {
+        display: block;
+    }
+
+    .sidebar-bg {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }

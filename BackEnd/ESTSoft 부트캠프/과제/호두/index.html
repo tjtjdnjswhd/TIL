@@ -11,18 +11,20 @@
 
 <body>
   <header>
-    <section id="header-top" class="flex justify-content-space-between">
+    <section id="header-top">
       <h2 class="d-none">Header top</h2>
-      <div>
-        <img src="assets/img/Logo-fin.svg" alt="호두 로고">
-      </div>
+      <img src="assets/img/Logo-fin.svg" alt="호두 로고">
       <nav id="header-top-nav">
-        <ul class="list-row d-inline">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Support</a></li>
-        </ul>
-        <button class="btn" href="">Download</button>
+        <div id="header-sidebar">
+          <button class="sidebar-close-btn"><img src="assets/img/arrow-right.svg" alt=""></button>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+          <button class="btn" href="">Download</button>
+        </div>
+        <button class="sidebar-open-btn"><img src="assets/img/hamburger-btn.svg" alt="사이드바 버튼"></button>
       </nav>
     </section>
 
@@ -34,17 +36,19 @@
           dummy text of the printing and
         </h3>
 
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.<br>
-          Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown
-        </p>
+        <div>
+          <span>
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.<br>
+            Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown
+          </span>
+        </div>
 
         <button class="btn">Download</button>
       </div>
 
-      <div>
+      <div id="header-bottom-img">
         <img src="assets/img/hodu-box.png" alt="박스를 머리에 쓴 고양이">
       </div>
     </section>
@@ -114,19 +118,21 @@
 
     <section id="subscribet">
       <h2 class="d-none">구독</h2>
-      <section class="text">
+      <section id="subscribet-text">
         <h3 class="d-none">구독 권유 메세지</h3>
         <strong>Subscribe to our Blog post</strong>
-        <br>
-        <span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text
-        </span>
+        <div>
+          <span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text
+          </span>
+        </div>
       </section>
       <section class="input-container">
         <h3 class="d-none">이메일 입력</h3>
-        <img src="assets/img/mail.svg" alt="이메일 아이콘">
-        <input type="email" placeholder="Enter your e-mail address">
+        <div class="input-wrap">
+          <input type="email" placeholder="Enter your e-mail address">
+        </div>
         <button class="btn hodu-modal-btn">Subscribe</button>
       </section>
     </section>
@@ -152,6 +158,7 @@
   <script src="assets/script/kakaomap.js"></script>
   <script src="assets/script/hoduModal.js"></script>
   <script src="assets/script/pictureShowMore.js"></script>
+  <script src="assets/script/headerSidebar.js"></script>
 </body>
 
 </html>
