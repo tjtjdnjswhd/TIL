@@ -32,9 +32,17 @@ const modalBtn = document.querySelector('.hodu-modal-btn');
 modalBtn.addEventListener('click', () => {
     document.body.appendChild(modalBg);
     document.body.appendChild(modal);
+    setTimeout(() => {
+        modalBg.style.opacity = '1';
+        modal.style.opacity = '1';
+    }, 100);
 });
 
 function removeModal() {
-    modalBg.remove();
-    modal.remove();
+    modalBg.style.opacity = '0';
+    modal.style.opacity = '0';
+    setTimeout(() => {
+        modalBg.remove();
+        modal.remove();
+    }, 500);
 }

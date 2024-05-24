@@ -6,8 +6,11 @@
     const sidebar = document.querySelector('#header-sidebar');
     const sidebarOpenBtn = document.querySelector('.sidebar-open-btn');
     sidebarOpenBtn.addEventListener('click', () => {
-        sidebar.classList.add('open');
         document.body.append(background);
+        setTimeout(() => {
+            sidebar.classList.add('open');
+            background.classList.add('open');
+        }, 300);
     });
 
     const sidebarCloseBtn = document.querySelector('.sidebar-close-btn');

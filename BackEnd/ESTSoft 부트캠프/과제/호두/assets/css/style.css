@@ -410,6 +410,10 @@ footer li a {
     z-index: 1000;
 
     text-align: center;
+
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
 
 .modal img {
@@ -418,7 +422,7 @@ footer li a {
 
 .modal strong {
     display: inline-block;
-    width: 100% ;
+    width: 100%;
     color: rgba(217, 118, 82, 1);
     font-size: 36px;
     font-weight: 700;
@@ -436,6 +440,9 @@ footer li a {
     position: fixed;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 1080px) {
@@ -485,19 +492,41 @@ footer li a {
     }
 
     #header-sidebar {
-        display: none;
-        width: max(calc(100vw - 260px), 240px);
+        width: 0;
         height: 100vh;
-        top: 0;
-        right: 0;
-        background-color: #263140;
-        position: fixed;
         padding-left: 60px;
         padding-top: 120px;
+
+        top: 0;
+        right: -200px;
+        background-color: #263140;
+        position: fixed;
         z-index: 1000;
+
+        transition-property: width;
+        transition-duration: 0.2s;
+    }
+
+    .sidebar-bg {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+    }
+
+    .sidebar-bg.open {
+        opacity: 1;
     }
 
     #header-sidebar.open {
+        width: max(calc(100vw - 260px), 240px);
+        right: 0;
         display: block;
     }
 
@@ -527,15 +556,5 @@ footer li a {
     .sidebar-open-btn,
     .sidebar-close-btn {
         display: block;
-    }
-
-    .sidebar-bg {
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 900;
-        background-color: rgba(0, 0, 0, 0.5);
     }
 }
