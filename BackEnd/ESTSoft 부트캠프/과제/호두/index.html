@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hodu</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6e6d3d6267a2ea7f0656ab49c2604349"></script>
+  <script type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6e6d3d6267a2ea7f0656ab49c2604349"></script>
 </head>
 
 <body>
@@ -137,6 +138,13 @@
       </section>
     </section>
 
+    <button id="scroll-up-btn">
+      <svg width="20" height="13" viewBox="0 0 20 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.35 12.6833L10 5.04992L17.65 12.6833L20 10.3333L10 0.333252L0 10.3333L2.35 12.6833Z"
+          fill="currentColor" />
+      </svg>
+    </button>
+
   </main>
 
   <div id="bottom-img-container">
@@ -144,21 +152,35 @@
   </div>
 
   <footer>
-    <img src="assets/img/Logo-fin.svg" alt="호두 로고">
-    <nav>
-      <ul class="d-inline">
-        <li><a class="logo-anchor" id="link-blog" href=""></a></li>
-        <li><a class="logo-anchor" id="link-instagram" href=""></a></li>
-        <li><a class="logo-anchor" id="link-facebook" href=""></a></li>
-        <li><a class="logo-anchor" id="link-youtube" href=""></a></li>
-      </ul>
-    </nav>
+    <div id="footer-default">
+      <img src="assets/img/Logo-fin.svg" alt="호두 로고">
+      <nav>
+        <ul>
+          <li><a class="logo-anchor" id="link-blog" href=""></a></li>
+          <li><a class="logo-anchor" id="link-instagram" href=""></a></li>
+          <li><a class="logo-anchor" id="link-facebook" href=""></a></li>
+          <li><a class="logo-anchor" id="link-youtube" href=""></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="footer-nav">
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Terms of Use</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 
   <script src="assets/script/kakaomap.js"></script>
   <script src="assets/script/hoduModal.js"></script>
   <script src="assets/script/pictureShowMore.js"></script>
   <script src="assets/script/headerSidebar.js"></script>
+  <script src="assets/script/scrollUpBtn.js"></script>
 </body>
 
 </html>

@@ -33,16 +33,16 @@ modalBtn.addEventListener('click', () => {
     document.body.appendChild(modalBg);
     document.body.appendChild(modal);
     setTimeout(() => {
-        modalBg.style.opacity = '1';
-        modal.style.opacity = '1';
+        modal.classList.add('active');
+        modalBg.classList.add('active');
     }, 100);
 });
 
 function removeModal() {
-    modalBg.style.opacity = '0';
-    modal.style.opacity = '0';
+    modal.classList.remove('active');
+    modalBg.classList.remove('active');
     setTimeout(() => {
         modalBg.remove();
         modal.remove();
-    }, 500);
+    }, 300);
 }
