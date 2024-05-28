@@ -6,18 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hodu</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="text/javascript"
-    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6e6d3d6267a2ea7f0656ab49c2604349"></script>
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6e6d3d6267a2ea7f0656ab49c2604349"></script>
 </head>
 
 <body>
   <header>
     <section id="header-top">
-      <h2 class="d-none">Header top</h2>
+      <h2 class="sr-only">로고 및 사이트 링크</h2>
       <img src="assets/img/Logo-fin.svg" alt="호두 로고">
-      <nav id="header-top-nav">
-        <div id="header-sidebar">
-          <button class="sidebar-close-btn"><img src="assets/img/arrow-right.svg" alt=""></button>
+      <nav>
+        <div class="sidebar">
+          <button class="sidebar-close-btn"><img src="assets/img/arrow-right.svg" alt="사이드바 닫는 버튼"></button>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -25,12 +24,12 @@
           </ul>
           <button class="btn" href="">Download</button>
         </div>
-        <button class="sidebar-open-btn"><img src="assets/img/hamburger-btn.svg" alt="사이드바 버튼"></button>
+        <button class="sidebar-open-btn"><img src="assets/img/hamburger-btn.svg" alt="사이드바 여는 버튼"></button>
       </nav>
     </section>
 
     <section id="header-bottom">
-      <h2 class="d-none">Header bottom</h2>
+      <h2 class="sr-only">사이트 설명 및 고양이 이미지</h2>
       <div id="header-bottom-text">
         <h3>
           Lorem Ipsum is simply
@@ -57,7 +56,7 @@
 
   <main>
     <section id="intro">
-      <h2 class="d-none">intro</h2>
+      <h2 class="sr-only">intro</h2>
       <div>
         <img src="assets/img/hodu-1.png" alt="이불에 누워있는 고양이">
       </div>
@@ -82,27 +81,27 @@
     </section>
 
     <section id="pictures">
-      <h2 class="d-none">고양이 사진들</h2>
-      <div class="picture-container">
-        <div class="picture-wrap">
+      <h2 class="sr-only">고양이 사진들</h2>
+      <ul class="picture-container">
+        <li class="picture-wrap">
           <img src="assets/img/img_1.png" alt="캣타워에 올라간 고양이">
-        </div>
-        <div class="picture-wrap">
+        </li>
+        <li class="picture-wrap">
           <img src="assets/img/img_2.png" alt="뒤를 바라보는 고양이">
-        </div>
-        <div class="picture-wrap">
+        </li>
+        <li class="picture-wrap">
           <img src="assets/img/img_3.png" alt="멀리서 찍은 정면을 보는 고양이">
-        </div>
-        <div class="picture-wrap">
+        </li>
+        <li class="picture-wrap">
           <img src="assets/img/img_4.png" alt="가까이 찍은 정면을 보는 고양이">
-        </div>
-        <div class="picture-wrap">
+        </li>
+        <li class="picture-wrap">
           <img src="assets/img/img_5.png" alt="위를 보는 고양이">
-        </div>
-        <div class="picture-wrap">
+        </li>
+        <li class="picture-wrap">
           <img src="assets/img/img_6.png" alt="하품하는 고양이">
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <strong class="d-block font-24 font-w-700">Continue exploring HODU</strong>
       <button class="btn show-more-btn">Show more</button>
@@ -111,16 +110,16 @@
     <hr>
 
     <section id="map-wrap">
-      <h2 class="d-none">지도</h2>
+      <h2 class="sr-only">지도</h2>
       <strong class="d-block font-36 font-w-700">Where you'll be</strong>
-      <span>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</span>
+      <address>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</address>
       <div id="map"></div>
     </section>
 
     <section id="subscribet">
-      <h2 class="d-none">구독</h2>
+      <h2 class="sr-only">구독</h2>
       <section id="subscribet-text">
-        <h3 class="d-none">구독 권유 메세지</h3>
+        <h3 class="sr-only">구독 권유 메세지</h3>
         <strong>Subscribe to our Blog post</strong>
         <div>
           <span>
@@ -130,15 +129,15 @@
         </div>
       </section>
       <section class="input-container">
-        <h3 class="d-none">이메일 입력</h3>
         <div class="input-wrap">
-          <input type="email" placeholder="Enter your e-mail address">
+          <label class="sr-only" for="subscribet-email">이메일 입력</label>
+          <input id="subscribet-email" type="email" placeholder="Enter your e-mail address">
         </div>
         <button class="btn hodu-modal-btn">Subscribe</button>
       </section>
     </section>
 
-    <button id="scroll-up-btn">
+    <button class="scroll-up-btn">
       <svg width="20" height="13" viewBox="0 0 20 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.35 12.6833L10 5.04992L17.65 12.6833L20 10.3333L10 0.333252L0 10.3333L2.35 12.6833Z"
           fill="currentColor" />
@@ -148,11 +147,10 @@
   </main>
 
   <div id="bottom-img-container">
-    <img src="assets/img/img_7.png" alt="">
   </div>
 
   <footer>
-    <div id="footer-default">
+    <section id="footer-default">
       <img src="assets/img/Logo-fin.svg" alt="호두 로고">
       <nav>
         <ul>
@@ -162,9 +160,9 @@
           <li><a class="logo-anchor" id="link-youtube" href=""></a></li>
         </ul>
       </nav>
-    </div>
+    </section>
 
-    <div id="footer-nav">
+    <section id="footer-nav">
       <nav>
         <ul>
           <li><a href="">About</a></li>
@@ -173,13 +171,13 @@
           <li><a href="">Terms of Use</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
   </footer>
 
   <script src="assets/script/kakaomap.js"></script>
   <script src="assets/script/hoduModal.js"></script>
   <script src="assets/script/pictureShowMore.js"></script>
-  <script src="assets/script/headerSidebar.js"></script>
+  <script src="assets/script/sidebar.js"></script>
   <script src="assets/script/scrollUpBtn.js"></script>
 </body>
 

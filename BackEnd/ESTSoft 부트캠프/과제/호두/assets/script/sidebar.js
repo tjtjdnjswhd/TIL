@@ -3,7 +3,7 @@
     background.classList.add('sidebar-bg');
     background.addEventListener('click', remove);
     
-    const sidebar = document.querySelector('#header-sidebar');
+    const sidebar = document.querySelector('.sidebar');
     const sidebarOpenBtn = document.querySelector('.sidebar-open-btn');
     sidebarOpenBtn.addEventListener('click', () => {
         document.body.append(background);
