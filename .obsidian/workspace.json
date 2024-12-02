@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "ef31841b873037b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f24e0fa2f7295e2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c60540bef0ab8c08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "리눅스/리눅스 일반.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "리눅스 일반"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0ee8051e99f49a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ef110296a8bc953",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72abc4751f3efd04",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "1d4f4d871c00ce10",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "path:TIL  ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "dbd9a67dd17a75d0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cefc8d1ede0a2b9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e701fb27a4ba428",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a252ac63966e2603",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "리눅스/리눅스 정리.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 리눅스 정리"
+            }
+          },
+          {
+            "id": "84553d9a50eb114b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "리눅스/리눅스 정리.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 리눅스 정리"
+            }
+          },
+          {
+            "id": "3f23e2b108aac7fc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ee81f3fab13c3319",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TIL/리눅스/리눅스 일반.md"
+              },
+              "icon": "lucide-list",
+              "title": "리눅스 일반 개요"
+            }
+          },
+          {
+            "id": "83fd7a41cc71f355",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "c60540bef0ab8c08",
+  "lastOpenFiles": [
+    "TIL/리눅스/리눅스 일반.md",
+    "TIL/리눅스/Unix_timeline.en.svg.png",
+    "TIL/BackEnd/ESTSoft 부트캠프/1. 네트워크 기초.md",
+    "TIL/BackEnd/ESTSoft 부트캠프/6. Javascript.md",
+    "TIL/README.md",
+    "DB/SQLD/SQLD 기본.docx",
+    "DB/SQLD/SQLD 이론.docx",
+    "DB/SQLD",
+    "DB",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/GmarketFont/GmarketSansTTFLight.ttf",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/GmarketFont/GmarketSansTTFMedium.ttf",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/GmarketFont/GmarketSansTTFBold.ttf",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/커서.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/위니브.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/시계.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/따옴표.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/1만 시간의 법칙.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/style.css",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/css/style.css",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/Gmarket-font.css",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/youtube.svg",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/modal-background.png",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/Logo-fin.svg",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/mail.svg",
+    "BackEnd/ESTSoft 부트캠프/참고/IntelliJ 단축키.md",
+    "BackEnd/ESTSoft 부트캠프/2. git, GitHub 기초.md",
+    "BackEnd/ESTSoft 부트캠프/9. Java 변수.md",
+    "BackEnd/ESTSoft 부트캠프/8. Java 기본.md",
+    "BackEnd/ESTSoft 부트캠프/7. DOM.md",
+    "BackEnd/ESTSoft 부트캠프/6. Javascript.md",
+    "BackEnd/ESTSoft 부트캠프/5. CSS.md",
+    "BackEnd/ESTSoft 부트캠프/4. HTML form.md",
+    "BackEnd/ESTSoft 부트캠프/11. JDBC, Mybatis, JPA.md",
+    "BackEnd/ESTSoft 부트캠프/3. HTML 기본.md",
+    "BackEnd/ESTSoft 부트캠프/10. Spring 기초.md",
+    "BackEnd/ESTSoft 부트캠프/1. 네트워크 기초.md",
+    "README.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/참고/IntelliJ 단축키.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/9. Java 변수.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/8. Java 기본.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/7. DOM.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/6. Javascript.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/5. CSS.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/4. HTML form.md",
+    "리눅스/BackEnd/ESTSoft 부트캠프/3. HTML 기본.md"
+  ]
+}
