@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/리눅스/리눅스 일반.md"
+                "file": "리눅스/리눅스 일반.md"
               },
               "icon": "lucide-list",
               "title": "리눅스 일반 개요"
@@ -175,6 +175,7 @@
   },
   "active": "c60540bef0ab8c08",
   "lastOpenFiles": [
+    "리눅스/리눅스 일반.md",
     "TIL/리눅스/리눅스 일반.md",
     "TIL/리눅스/Unix_timeline.en.svg.png",
     "TIL/BackEnd/ESTSoft 부트캠프/1. 네트워크 기초.md",
