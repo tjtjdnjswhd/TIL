@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f24e0fa2f7295e2f",
+        "id": "333e0ecb352ef8e0",
         "type": "tabs",
         "children": [
           {
-            "id": "c60540bef0ab8c08",
+            "id": "46df3e67f9deed5d",
             "type": "leaf",
             "state": {
               "type": "diff-view",
@@ -170,12 +170,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c60540bef0ab8c08",
+  "active": "46df3e67f9deed5d",
   "lastOpenFiles": [
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/커서.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/위니브.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/따옴표.png",
+    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/1만 시간의 법칙.png",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/arrow-right.svg",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/blog.svg",
+    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/hamburger-btn.svg",
     "리눅스/리눅스 일반.md",
+    "리눅스/Network Topology.png",
+    "리눅스/star.svg",
     "리눅스/Unix_timeline.en.svg.png",
+    "리눅스/X윈도_1.svg",
     "TIL/리눅스/리눅스 일반.md",
-    "TIL/리눅스/Unix_timeline.en.svg.png",
     "TIL/BackEnd/ESTSoft 부트캠프/1. 네트워크 기초.md",
     "TIL/BackEnd/ESTSoft 부트캠프/6. Javascript.md",
     "TIL/README.md",
@@ -186,17 +195,9 @@
     "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/GmarketFont/GmarketSansTTFLight.ttf",
     "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/GmarketFont/GmarketSansTTFMedium.ttf",
     "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/GmarketFont/GmarketSansTTFBold.ttf",
-    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/커서.png",
-    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/위니브.png",
-    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/시계.png",
-    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/따옴표.png",
-    "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/imgs/1만 시간의 법칙.png",
     "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/style.css",
     "BackEnd/ESTSoft 부트캠프/과제/호두/assets/css/style.css",
     "BackEnd/ESTSoft 부트캠프/과제/1만 시간의 법칙/assets/css/Gmarket-font.css",
-    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/youtube.svg",
-    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/modal-background.png",
-    "BackEnd/ESTSoft 부트캠프/과제/호두/assets/img/Logo-fin.svg",
     "BackEnd/ESTSoft 부트캠프/참고/IntelliJ 단축키.md",
     "BackEnd/ESTSoft 부트캠프/2. git, GitHub 기초.md",
     "BackEnd/ESTSoft 부트캠프/9. Java 변수.md",
